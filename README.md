@@ -6,6 +6,9 @@ This program finds the most profitable consecutive period of sales over a year. 
 1. Open SalesAnalysis.java folder in IntelliJ IDEA
 2. Edit the salesChange array as needed.
 3. click the green play button on the left side of the screen.
+   or
+1. in IntelliJ IDEA terminal enter javac SalesAnalysis.java
+2. and then enter java SalesAnalysis.java
 
 ## Output
 When the program is executed it will output the start month, end month, and total sales change for the best period. 
