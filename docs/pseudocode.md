@@ -13,15 +13,15 @@ Method analyzeSales (Accepts: months array, salesChange array):
 4. Loop through each month from the beginning to the end of the year to pick a start index:
     a. Initialize a currentWindowSum accumulator to 0.
     
-    b. Loop forward from that chosen start index to the end of the year to pick an end index:
+    b. Loop forward from that start index to the end of the year to pick an end index:
         1. Add the sales value at the current end position to currentWindowSum.
         
-        2. Compare: If currentWindowSum is strictly greater than maxCombinedChange:
+        2. Compare: If currentWindowSum is greater than maxCombinedChange:
             - Update maxCombinedChange to equal currentWindowSum.
             - Set bestStartIndex to equal the current start index.
             - Set bestEndIndex to equal the current end index.
         
-        3. Otherwise (if it is less or a tie), do nothing and continue the loop.
+        3. Otherwise (if it is less or a tie), ignore and continue the loop.
         
 5. Call the displayResults method, passing the month name at bestStartIndex, the month name at bestEndIndex, and the value of maxCombinedChange.
 ## Display Results
